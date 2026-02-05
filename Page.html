@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan</title>
+  <link rel="stylesheet" href="Page.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="back" href="index.html">← Back</a>
+      <div class="brand">logoipsum<span>®</span></div>
+      <div class="ghost"></div>
+    </div>
+  </header>
+
+  <!-- Steps -->
+  <section class="steps-wrap">
+    <div class="steps">
+      <div class="step done">
+        <span class="dot"></span>
+        <span class="label">Get Quote</span>
+      </div>
+
+      <div class="step active">
+        <span class="dot"></span>
+        <span class="label">Plan Option</span>
+      </div>
+
+      <div class="step">
+        <span class="dot"></span>
+        <span class="label">Travellers</span>
+      </div>
+
+      <div class="step">
+        <span class="dot"></span>
+        <span class="label">Payment</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section class="summary">
+    <div class="summary-inner">
+      <div class="sum-item"><strong>Destination(s):</strong> <span id="destText">Australia</span></div>
+      <div class="divider"></div>
+      <div class="sum-item"><strong>Dates:</strong> <span id="dateText">04/11/2025 - 13/11/2025</span></div>
+      <div class="divider"></div>
+      <div class="sum-item">
+        <strong>Traveller Ages:</strong> <span id="ageText">23</span>
+        <a class="edit-btn" href="#" id="openEdit">Edit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page -->
+  <main class="container">
+
+    <!-- Mobile Trip Details -->
+    <aside class="trip-details">
+      <div class="trip-card">
+        <div class="trip-head">
+          <h3>Trip Details</h3>
+          <a href="#" class="edit-btn small" id="openEdit2">Edit</a>
+        </div>
+
+        <div class="trip-row"><span>Destination(s):</span><strong id="destText2">Australia</strong></div>
+        <div class="trip-row"><span>Dates:</span><strong id="dateText2">04/11/2025 - 13/11/2025</strong></div>
+        <div class="trip-row"><span>Traveller Age:</span><strong id="ageText2">23</strong></div>
+
+        <div class="mini-plans">
+          <div class="mini">
+            <span class="name">VOYAGER</span>
+            <span class="price">$15.98</span>
+          </div>
+          <div class="mini active">
+            <span class="name">VOYAGER PLUS</span>
+            <span class="price">$41.34</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Plans Compare -->
+    <section class="compare">
+
+      <div class="plans-grid">
+        <!-- Plan 1 -->
+        <article class="plan card">
+          <div class="plan-top">
+            <div class="badge navy">V</div>
+            <h2>VOYAGER</h2>
+            <p class="from">From <s>$17.37</s></p>
+            <div class="amount navy">$15<span>.98</span></div>
+            <p class="muted">Total Cost</p>
+            <p class="tiny">Policy benefits listed below, per traveller limits apply</p>
+          </div>
+
+          <div class="plan-cta">
+            <button class="btn navy" type="button">CHOOSE PLAN</button>
+            <a class="link" href="#">View Policy Information</a>
+          </div>
+        </article>
+
+        <!-- Plan 2 -->
+        <article class="plan card highlight">
+          <div class="plan-top">
+            <div class="badge gold">V</div>
+            <h2>VOYAGER PLUS</h2>
+            <p class="from">From $44.94</p>
+            <div class="amount gold">$41<span>.34</span></div>
+            <p class="muted">Total Cost</p>
+            <p class="tiny">Policy benefits listed below, per traveller limits apply</p>
+          </div>
+
+          <div class="plan-cta">
+            <button class="btn gold" type="button">CHOOSE PLAN</button>
+            <a class="link" href="#">View Policy Information</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Benefits table -->
+      <div class="benefits card">
+        <div class="benefits-row head">
+          <div class="b-left"> </div>
+          <div class="b-mid">VOYAGER</div>
+          <div class="b-right">VOYAGER PLUS</div>
+        </div>
+
+        <div class="benefits-row">
+          <div class="b-left">Cancellation or trip interruption</div>
+          <div class="b-mid">$1,000</div>
+          <div class="b-right">
+            <select class="select">
+              <option>$4,000</option>
+              <option>$3,000</option>
+              <option>$2,000</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="benefits-row">
+          <div class="b-left">Luggage and personal effects</div>
+          <div class="b-mid">$500</div>
+          <div class="b-right">
+            <select class="select">
+              <option>$1,000</option>
+              <option>$750</option>
+              <option>$500</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="benefits-row">
+          <div class="b-left">Travel Delay</div>
+          <div class="b-mid muted">not available</div>
+          <div class="b-right">$1,000</div>
+        </div>
+
+        <div class="benefits-row">
+          <div class="b-left">Personal Liability</div>
+          <div class="b-mid muted">not available</div>
+          <div class="b-right">$2,500,000</div>
+        </div>
+
+        <div class="benefits-row subhead">
+          <div class="b-left"><strong>Optional Cover</strong></div>
+          <div class="b-mid"></div>
+          <div class="b-right"></div>
+        </div>
+
+        <div class="benefits-row">
+          <div class="b-left">Rental Vehicle Excess</div>
+          <div class="b-mid muted">not available</div>
+          <div class="b-right">
+            <select class="select">
+              <option>Not Selected</option>
+              <option>Selected</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="benefits-footer">
+          <a href="#" class="link">Show All Benefits</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>©2025 Logo Ipsum. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ Edit Modal -->
+  <div class="modal" id="editModal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3>Edit Trip Details</h3>
+        <button class="x" id="closeEdit" type="button">✕</button>
+      </div>
+
+      <form id="editForm">
+        <label>Destination</label>
+        <input type="text" id="destInput" required />
+
+        <label>Start Date</label>
+        <input type="date" id="startInput" required />
+
+        <label>End Date</label>
+        <input type="date" id="endInput" required />
+
+        <label>Traveller Age</label>
+        <input type="number" id="ageInput" min="1" max="120" required />
+
+        <div class="modal-actions">
+          <button type="button" class="btn-outline" id="cancelBtn">Cancel</button>
+          <button type="submit" class="btn-save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="Page.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Insurance - Quote</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="#">
+         <img src="./logo.svg" />
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-links desktop">
+          <li>
+            <button
+              class="nav-btn"
+              type="button"
+              id="travelBtn"
+              aria-expanded="false"
+            >
+              Travel Insurance <span class="caret">▾</span>
+            </button>
+          </li>
+
+          <li><a href="#">Emergency Assistance</a></li>
+          <li>
+            <a href="#">Customer Service <span class="caret">▾</span></a>
+          </li>
+        </ul>
+
+        <!-- Mobile Hamburger -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <!-- ✅ DESKTOP MEGA MENU (header ke just baad) -->
+    <div class="mega" id="mega" aria-hidden="true">
+      <div class="mega-inner container">
+        <button class="mega-close" type="button" id="megaClose">✕</button>
+
+        <div class="mega-grid">
+          <div class="mega-left">
+            <img src="travel.png" alt="Travel" />
+          </div>
+
+          <div class="mega-mid">
+            <h3>Travel Insurance</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              gravida tincidunt mi, in bibendum sapien pellentesque vitae.
+            </p>
+            <button class="mega-cta" type="button">GET A QUOTE</button>
+          </div>
+
+          <div class="mega-right">
+            <a href="Page.html">Plans</a>
+            <a href="#">Upgrades</a>
+            <a href="#">Traveler Type</a>
+            <a href="#">Trip Type</a>
+            <a href="#">Benefits</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MOBILE DRAWER ================= -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-panel" role="dialog" aria-modal="true">
+        <div class="drawer-top">
+          <div class="drawer-brand">
+            <span class="brand-mark"></span>
+            <span class="brand-text">logoipsum</span>
+          </div>
+          <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+            ✕
+          </button>
+        </div>
+
+        <div class="drawer-body">
+          <div class="acc">
+            <button
+              class="acc-head"
+              id="accTravel"
+              aria-expanded="true"
+              type="button"
+            >
+              <span>Travel Insurance</span>
+              <span class="acc-icon">⌃</span>
+            </button>
+
+            <div class="acc-panel open" id="accTravelPanel">
+              <a href="Page.html">Plans</a>
+              <a href="#">Upgrades</a>
+              <a href="#">Traveller Type</a>
+              <a href="#">Trip Type</a>
+              <a href="#">Benefits</a>
+            </div>
+          </div>
+
+          <a class="drawer-link" href="#">Emergency Assistance</a>
+
+          <div class="acc">
+            <button
+              class="acc-head"
+              id="accCustomer"
+              aria-expanded="false"
+              type="button"
+            >
+              <span>Customer Service</span>
+              <span class="acc-icon">⌄</span>
+            </button>
+
+            <div class="acc-panel" id="accCustomerPanel">
+              <a href="#">Contact</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MAIN ================= -->
+    <main class="hero">
+      <div class="container hero-wrap">
+        <section class="hero-content">
+          <p class="kicker">
+            BREAKING THE LIMITS OF TRADITIONAL TRAVEL INSURANCE
+          </p>
+          <h1 class="title">Find the Right Plan for You</h1>
+
+          <div class="card">
+            <div class="tabs">
+              <button class="tab" type="button">Single Trip</button>
+              <button class="tab active" type="button">Multi Trip</button>
+            </div>
+
+            <form class="form" onsubmit="return false;">
+              <label class="label">Where are you travelling?</label>
+
+              <div class="dropdown" id="dropdown">
+                <div class="dropdown-control">
+                  <input
+                    class="dropdown-input"
+                    id="dropdownInput"
+                    type="text"
+                    placeholder="Type or choose your destinations"
+                    autocomplete="off"
+                  />
+                  <img src="./Dropdown=Icon.svg" class="dropdown-btn" />
+                </div>
+
+                <ul class="dropdown-list" id="dropdownList" hidden>
+                  <li data-value="Austria" tabindex="-1">Austria</li>
+                  <li data-value="Bali (Indonesia)" tabindex="-1">
+                    Bali (Indonesia)
+                  </li>
+                  <li data-value="Canada" tabindex="-1">Canada</li>
+                  <li data-value="France" tabindex="-1">France</li>
+                  <li data-value="Germany" tabindex="-1">Germany</li>
+                </ul>
+              </div>
+
+              <div class="chips" id="chips"></div>
+
+              <label class="label" for="leave">When do you leave?</label>
+              <input
+                id="leave"
+                class="control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+              />
+
+              <label class="label" for="return">When do you return?</label>
+              <input
+                id="return"
+                class="control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+              />
+
+              <label class="label">Current age of all Travellers?</label>
+
+              <div class="age-wrap" id="ageWrap">
+                <div class="age-row">
+                  <input class="control age-input" type="number" min="0" />
+                  <button
+                    type="button"
+                    class="plus-btn"
+                    id="addAgeBtn"
+                    aria-label="Add traveller"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <input class="control" type="text" placeholder="Promo Code" />
+              <button class="cta" type="button">GET A QUOTE</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
