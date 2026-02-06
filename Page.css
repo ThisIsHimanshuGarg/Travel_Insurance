@@ -192,18 +192,8 @@ body{
 .plan.highlight{ border-color:#ffe2a3; }
 .plan-top{ text-align:center; }
 
-.badge{
-  width:44px;
-  height:44px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:#fff;
-  font-weight:900;
-  margin: 2px auto 10px;
-}
-.badge.navy{ background: var(--navy); }
-.badge.gold{ background: var(--gold); color:#1b1403; }
+
+
 
 .plan h2{ font-size:16px; letter-spacing:.4px; }
 .from{ margin-top:6px; color:var(--muted); font-size:13px; }
